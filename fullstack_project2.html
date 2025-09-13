@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Solar Syatem</title>
+    </head>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            position: relative;
+        }
+        .sun{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;   
+            border-radius: 50%;
+        }
+        .p1{
+            
+            width: 50px;
+            height: 50px;
+            background-color: rgb(127, 87, 1);
+            border-radius: 50%;
+            position: absolute;
+            animation: orbit1 5s linear infinite;
+        }
+        .p2{
+            
+            width: 80px;
+            height: 80px;
+            background-color: rgb(16, 203, 255);
+            border-radius: 50%;
+            position: absolute;
+            animation: orbit2 10s linear infinite;
+        }
+        .p3{
+            width: 90px;
+            height: 90px;
+            background-color: rgb(32, 40, 255);
+            border-radius: 50%;
+            position: absolute;
+            animation: orbit3 11s linear infinite;
+        }
+        .p4{
+            width: 110px;
+            height: 110px;
+            background-color: rgb(152, 2, 2);
+            border-radius: 50%;
+            position: absolute;
+            animation: orbit4 15s linear infinite;
+        }
+        .p5{
+            width: 140px;
+            height: 140px;
+            background-color: rgb(160, 142, 0);
+            border-radius: 50%;
+            position: absolute;
+            animation: orbit5 19s linear infinite;
+        }
+        @keyframes orbit1 {
+            0%{
+                transform: rotate(0deg) translateX(150px) rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg) translateX(150px) rotate(-360deg);
+            }
+        }
+        @keyframes orbit2 {
+            0%{
+                transform: rotate(0deg) translateX(200px) rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg) translateX(200px) rotate(-360deg);
+            }
+        }
+        @keyframes orbit3 {
+            0%{
+                transform: rotate(0deg) translateX(250px) rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg) translateX(250px) rotate(-360deg);
+            }
+        }
+        @keyframes orbit4 {
+            0%{
+                transform: rotate(0deg) translateX(300px) rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg) translateX(300px) rotate(-360deg);
+            }
+        }
+        @keyframes orbit5 {
+            0%{
+                transform: rotate(0deg) translateX(350px) rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg) translateX(350px) rotate(-360deg);
+            }
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="sun">
+                
+            </div>
+            <div class="p1">
+
+            </div>
+            <div class="p2">
+
+            </div>
+            <div class="p3">
+
+            </div>
+            <div class="p4">
+
+            </div>
+            <div class="p5">
+
+            </div>
+        
+        </div>
+    </body>
+</html>
